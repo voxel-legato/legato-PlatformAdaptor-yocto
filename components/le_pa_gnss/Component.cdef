@@ -1,0 +1,22 @@
+sources:
+{
+    gnss_yocto.c
+}
+
+cflags:
+{
+    -I$LEGATO_ROOT/components/positioning/platformAdaptor/inc
+    -I$LEGATO_ROOT/components
+}
+ldflags:
+{
+    -lgps
+}
+
+requires:
+{
+    api:
+    {
+        le_gnss.api    [types-only]
+    }
+}
