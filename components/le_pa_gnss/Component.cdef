@@ -1,6 +1,6 @@
 sources:
 {
-    gnss_yocto.c
+    gnss_gpsd.c
 }
 
 cflags:
